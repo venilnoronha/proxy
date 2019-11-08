@@ -9,8 +9,8 @@
 	{
 		"_comment": "",
 		"name": "ENVOY_SHA",
-		"repoName": "istio/envoy",
+		"repoName": "venilnoronha/envoy",
 		"file": "WORKSPACE",
-		"lastStableSHA": "bdb54fa3dc5c6e02a3746c8e2fd6c56640d17799"
+		"lastStableSHA": "15ea57efd784a6127a7fd95147f47fbfc79045d5"
 	}
 ]
