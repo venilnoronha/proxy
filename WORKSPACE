@@ -38,9 +38,9 @@ bind(
 # 2. Update .bazelrc and .bazelversion files.
 #
 # envoy commit date: 02/20/2020
-ENVOY_SHA = "524ab4cfd64ad6c9b9fb24f1ff0f79cabcc7d0ed"
+ENVOY_SHA = "a9555ef9577b2c9676c2fa62596426d46c1f15bc"
 
-ENVOY_SHA256 = "3eee859088cd759c6339ca1a2fe831bc7201c0d69bad489f1b5583f011f5b851"
+ENVOY_SHA256 = "6bc0b26968dcd12c29798b904d933debb603da39443228344f2972c791f0975e"
 
 # To override with local envoy, just pass `--override_repository=envoy=/PATH/TO/ENVOY` to Bazel or
 # persist the option in `user.bazelrc`.
@@ -48,7 +48,7 @@ http_archive(
     name = "envoy",
     sha256 = ENVOY_SHA256,
     strip_prefix = "envoy-" + ENVOY_SHA,
-    url = "https://github.com/istio/envoy/archive/" + ENVOY_SHA + ".tar.gz",
+    url = "https://github.com/venilnoronha/envoy/archive/" + ENVOY_SHA + ".tar.gz",
 )
 
 load("@envoy//bazel:api_binding.bzl", "envoy_api_binding")
